@@ -260,28 +260,65 @@ header .container {
   background-color: #2e2f42;
   color: #ffffff;
   padding: 72px 52px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url(../images/img-ret-mob/Dark-bg@1x.jpg);
+}
+@media (min-resolution: 192dpi) {
+  .order-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-ret-mob/Dark-bg@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .order-section {
     padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-ret-tab/Dark-bg@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .order-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-ret-tab/Dark-bg@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .order-section {
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-ret-desk/people-office\ 1@1x.jpg);
   }
 }
-
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .order-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-ret-desk/people-office\ 1@2x.jpg);
+  }
+}
 .order-container {
   display: flex;
   flex-direction: column;
@@ -486,6 +523,7 @@ header .container {
 }
 
 .team-items {
+  width: 100%;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -578,6 +616,7 @@ header .container {
 }
 
 .portfolio-items {
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
