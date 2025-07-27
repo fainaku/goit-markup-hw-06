@@ -143,6 +143,8 @@ header .container {
 }
 
 .mobile-menu-btn {
+  border: none;
+  background-color: transparent;
   display: flex;
   position: absolute;
   right: 16px;
