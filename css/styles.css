@@ -153,8 +153,6 @@ header .container {
   border: none;
   background-color: transparent;
   display: flex;
-  position: absolute;
-  right: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1127,9 +1125,14 @@ header .container {
   left: 0;
   z-index: 998;
   display: none;
+
+  background-color: #ffffff;
+}
+
+.mobile-menu-content {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #ffffff;
 }
 .is-open {
   display: flex;
